@@ -2,13 +2,4 @@ spring:
   application:
     name: userservice
   config:
-    import: optional:configserver:http://localhost:8888
-  dataSource:
-    url: jdbc:mysql://localhost:3306/sicet
-    username: root
-    password: pass@word1
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-      show-sql: true
+    import: optional:configserver:http://localhost:8000
